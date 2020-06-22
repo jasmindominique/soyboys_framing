@@ -1,7 +1,7 @@
 /* 
 ==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
+CONTENT:    Project Name Here
+AUTHOR:     Your Name Here
 ==============================================
 
 TABLE OF CONTENTS:
@@ -164,11 +164,13 @@ a {
 .info-soyboy {
 	margin-bottom: 1.5rem;
 	position: relative;
+	color: #fff;
 }
 
 .info-soyboy .subtitle {
 	font-size: 2rem;
 	font-weight: 600;
+	color: #fff;
 }
 
 .info-soyboy .title {
@@ -176,6 +178,7 @@ a {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	font-family: 'Anton', sans-serif;
+	color: #fff;
 }
 
 .info-soyboy .description {
@@ -188,15 +191,13 @@ a {
 	}
 	.nav {
 		height: 100%;
-		width: 160px;
 	}
 	.nav .navigation {
 		height: 100%;
-		width: 160px;
 		position: fixed;
 		z-index: 1;
 		top: 0;
-		left: 0;
+		left: 85%;
 		background-color: #00165A;
 		overflow-x: hidden;
 		padding-top: 20px;
