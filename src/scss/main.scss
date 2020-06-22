@@ -96,22 +96,24 @@ a{
     display: flex;
     justify-content: space-between;
 
+
     &__menu{
         @media screen and(max-width: 968px){
             position: fixed;
             top: $header-height;
             left: -100%; //keep the nav off the screen waiting for toggle
             padding: 1.5rem;
-            background-color: #9596A2
+            background-color: #00165A;
 ;
             width: 60%;
             transition: .33s;
+            height: 100%;
         }
     }
     .name{
-        color: #111;
         font-size: 1rem;
         padding: .3rem;
+        color: #fff;
     }
     .category{
         margin-bottom: 2rem;
@@ -229,6 +231,7 @@ footer{
     width: 100%;
     background-color: #FFD700;
     position: absolute;
+    botton: 0;
 
     p{
     width: 100%;

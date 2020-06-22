@@ -136,16 +136,17 @@ a {
 		top: 4rem;
 		left: -100%;
 		padding: 1.5rem;
-		background-color: #9596A2;
+		background-color: #00165A;
 		width: 60%;
 		transition: .33s;
+		height: 100%;
 	}
 }
 
 .nav .name {
-	color: #111;
 	font-size: 1rem;
 	padding: .3rem;
+	color: #fff;
 }
 
 .nav .category {
@@ -246,6 +247,7 @@ footer {
 	width: 100%;
 	background-color: #FFD700;
 	position: absolute;
+	botton: 0;
 }
 
 footer p {
