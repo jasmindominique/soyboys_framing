@@ -1,0 +1,257 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 0. Reset ================================= */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. Main Layout ================================= */
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+
+/*Varibles*/
+body {
+	margin: 4rem 0 0 0;
+	color: #111111;
+	font-family: 'Roboto', sans-serif;
+	background-image: url("dist/img/burger.png");
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* 2. Content ================================= */
+.img-wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+.img-wrap img {
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.soyboy-pg {
+	max-width: 1200px;
+	margin-right: .5rem;
+	margin-left: .5rem;
+}
+
+.header {
+	width: 100%;
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	background-color: #FFF;
+}
+
+.nav {
+	height: 4rem;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 968px) {
+	.nav__menu {
+		position: fixed;
+		top: 4rem;
+		left: -100%;
+		padding: 1.5rem;
+		background-color: #9596A2;
+		width: 60%;
+		transition: .33s;
+	}
+}
+
+.nav .name {
+	color: #111;
+	font-size: 1rem;
+	padding: .3rem;
+}
+
+.nav .category {
+	margin-bottom: 2rem;
+}
+
+.show {
+	left: 0;
+}
+
+.home {
+	height: calc(100vh - 4rem);
+	display: grid;
+}
+
+.info-soyboy {
+	margin-bottom: 1.5rem;
+	position: relative;
+}
+
+.info-soyboy .subtitle {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.info-soyboy .title {
+	font-size: 4rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	font-family: 'Anton', sans-serif;
+}
+
+.info-soyboy .description {
+	font-size: 1rem;
+}
+
+@media screen and (min-width: 968px) {
+	body {
+		margin: 0;
+	}
+	.nav {
+		height: 100%;
+		width: 160px;
+	}
+	.nav .navigation {
+		height: 100%;
+		width: 160px;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #00165A;
+		overflow-x: hidden;
+		padding-top: 20px;
+		align-items: right;
+	}
+	.nav .category {
+		margin-right: 4rem;
+		font-size: .5rem;
+		margin-bottom: 0;
+	}
+	.nav .name {
+		color: #fff;
+		display: flex;
+		padding: 1rem;
+	}
+	.nav__toggle {
+		display: none;
+	}
+	.home {
+		height: 100vh;
+		grid-template-rows: -webkit-max-content;
+		grid-template-rows: max-content;
+		grid-template-columns: -webkit-max-content -webkit-max-content;
+		grid-template-columns: max-content max-content;
+		align-content: center;
+		justify-content: center;
+		-webkit-column-gap: 10rem;
+		        column-gap: 10rem;
+	}
+	.info {
+		align-self: center;
+	}
+	.info-soyboy {
+		margin-bottom: 3rem;
+	}
+	.info-soyboy .subtitle {
+		font-size: 2rem;
+	}
+	.info-soyboy .title {
+		margin-bottom: 1rem;
+	}
+}
+
+footer {
+	height: 100px;
+	width: 100%;
+	background-color: #FFD700;
+	position: absolute;
+}
+
+footer p {
+	width: 100%;
+	text-align: center;
+	margin-top: 3%;
+	color: #800020;
+}
+
+/*# sourceMappingURL=main.css.map */
